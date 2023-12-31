@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<style>
+   .top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; /* Adjust the height of the top container */
+}
+
+.special-text,
+.color-changing-text {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+.icon-container {
+    display: flex;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.icon {
+    margin-right: 10px; /* Adjust the margin between icons as needed */
+    font-size: 24px;
+}
+
+#claimButton:hover {
+    background-color: #ff66b2;
+}
+
+#imageContainer {
+    width: 100%;
+    text-align: center;
+}
+
+.slideshow-image {
+    display: none;
+    max-width: 100%; /* Ensure the image fits within the container */
+}
+
+.color-changing-text {
+    animation: colorChange 3s infinite alternate; /* Color change animation */
+}
+
+@keyframes colorChange {
+    0%, 100% { color: #ff0000; } /* Red */
+    25% { color: #00ff00; } /* Green */
+    50% { color: #0000ff; } /* Blue */
+    75% { color: #ff66b2; } /* Magenta */
+}
+
+.timer {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.time-component {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.label {
+    font-size: 12px;
+}
+
+#claimButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: pink;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+#claimButton:hover {
+    background-color: #ff66b2;
+}
+
+</style>
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Oswald"
+        }
+
+        body {
+            font-family: "Open Sans"
+        }
+    </style>
+</head>
+
+
+
+
+
+<body class="w3-light-grey">
+
+    <!-- Navigation bar with social media icons -->
+    <div class="w3-bar w3-black w3-hide-small">
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+        <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/provoke-developers/" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+    </div>
+
+    <!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+    <div class="w3-content" style="max-width:1600px">
+
+        <!-- Header -->
+        <header class="w3-container w3-center w3-padding-48 w3-white">
+            <h1 class="w3-xxxlarge"><b>PROVOKERS</b></h1>
+			 <img class="w3-image" src="C:\Users\DELL\Downloads\Screenshot_2023-12-01_000817_708abc05-3a1e-4d00-b1cd-d1b59e8a5cc5 (2).png" alt="Logo" width="120" height="120">
+
+            <h6>Welcome to the <span class="w3-tag">game world</span></h6>
+        </header>
+		
+        <!-- Image header -->
+       <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="https://wallpapercave.com/wp/wp7657669.jpg" alt="Fashion Blog" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+        <div class="top-container">
+            <div class="flex-container">
+                <h1 class="w3-text-white">for chrome ,mobile</h1>
+                
+            </div>
+            <div>
+                <h1 id="cloudGaming" class="w3-jumbo w3-text-white w3-hide-small"><b>& Cloud gaming</b></h1>
+                <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off"
+                        onclick="document.getElementById('subscribe').style.display='block'">Claim Tickets</button></h6>
+            </div>
+        </div>
+    </div>
+</header>
+</div>
+
+
+        <!-- Grid -->
+        <div class="w3-row w3-padding w3-border">
+
+            <!-- Blog entries -->
+            <div class="w3-col l8 s12">
+
+                <!-- Blog entry -->
+                <div class="w3-container w3-white w3-margin w3-padding-large">
+                    <div class="w3-center">
+                        <h3>Join us on the launch of gartcod by</h3>
+                        <h5>provoker <span class="w3-opacity">2024</span></h5>
+                    </div>
+
+                    <div class="w3-justify">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.GBlh-fGuUjSQC-yNstrTSgHaEK&pid=Api&P=0&h=180" alt="Girl Hat" style="width:100%"
+                             
+		
+                  <div class="top-container">
+                   <div class="special-text">for</div>
+                    <div id="imageContainer">
+                        <img src="C:\Users\DELL\Downloads\NicePng_chrome-icon-png_1978682.png" class="slideshow-image" alt="Image 1" width="90">
+                        <img src="https://gartcod.cloud/_next/static/media/mobile.548cdf6e.svg" class="slideshow-image" alt="Image 2" width="90">
+                        <img src="https://gartcod.cloud/_next/static/media/desktop.6a735a94.svg" class="slideshow-image" alt="Image 3" width="90">
+        <!-- Add more local images as needed -->
+                   </div>
+                    <div class="special-text">&</div>
+                    <div class="color-changing-text">Cloud gaming</div>
+					<div class="timer" id="countdown">
+                                <div class="time-component" id="days">
+                                    <div id="days-value">0</div>
+                                    <div class="label">days</div>
+                                </div>
+                                <div class="time-component" id="hours">
+                                    <div id="hours-value">0</div>
+                                    <div class="label">hours</div>
+                                </div>
+                                <div class="time-component" id="minutes">
+                                    <div id="minutes-value">0</div>
+                                    <div class="label">minutes</div>
+                                </div>
+                                <div class="time-component" id="seconds">
+                                    <div id="seconds-value">0</div>
+                                    <div class="label">seconds</div>
+                                </div>
+                  </div>
+
+                        <p class="w3-left"><button class="w3-button w3-white w3-border"
+                                onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+                        <p class="w3-right"><button class="w3-button w3-black"
+                                onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span
+                                    class="w3-tag w3-white">1</span></button></p>
+                        <p class="w3-clear"></p>
+                        <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+                            <hr>
+                            <div class="w3-col l2 m3">
+                                <img src="/w3images/avatar_smoke.jpg" style="width:90px;">
+                            </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+	
+	
+	document.addEventListener("DOMContentLoaded", function () {
+    var images = document.querySelectorAll(".slideshow-image");
+    var currentIndex = 0;
+
+    function showNextImage() {
+        images[currentIndex].style.display = "none"; // Hide the current image
+
+        currentIndex = (currentIndex + 1) % images.length; // Move to the next image
+
+        images[currentIndex].style.display = "block"; // Show the next image
+    }
+
+    setInterval(showNextImage, 2000); // Change image every 2000 milliseconds (2 seconds)
+});
+
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function likeFunction(x) {
+    x.style.fontWeight = "bold";
+    x.innerHTML = "✓ Liked";
+}
+
+var cloudGaming = document.getElementById('cloudGaming');
+setInterval(() => {
+    cloudGaming.style.color = getRandomColor();
+}, 1000);
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+var targetDate = new Date();
+targetDate.setDate(targetDate.getDate() + 31);
+targetDate.setHours(targetDate.getHours() + 9);
+targetDate.setMinutes(targetDate.getMinutes() + 4);
+targetDate.setSeconds(targetDate.getSeconds() + 53);
+
+// Update the countdown every second
+var countdownInterval = setInterval(updateCountdown, 1000);
+
+function updateCountdown() {
+    var currentDate = new Date().getTime();
+    var timeDifference = targetDate - currentDate;
+
+    // Calculate days, hours, minutes, and seconds
+    var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    // Display the countdown
+    document.getElementById('days-value').innerHTML = days;
+    document.getElementById('hours-value').innerHTML = hours;
+    document.getElementById('minutes-value').innerHTML = minutes;
+    document.getElementById('seconds-value').innerHTML = seconds;
+
+    // Check if the countdown is complete
+    if (timeDifference < 0) {
+        clearInterval(countdownInterval);
+        document.getElementById('countdown').innerHTML = 'Countdown Expired';
+    }
+}
+
+function claimTickets() {
+    // Add your logic for claiming tickets here
+    alert('Tickets claimed!');
+}
+
+
+
+    </script>
+
+</body>
+
+</html>
